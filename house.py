@@ -1,7 +1,7 @@
 import pickle
 from flask import Flask,render_template,request
 app=Flask(__name__)
-model=pickle.load(open('house.pkl','rb'))
+model=pickle.load(open('House.pkl','rb'))
 @app.route('/home')
 def home():
     return render_template('home.html')
